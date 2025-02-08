@@ -1,3 +1,7 @@
+const path = require('path');
+global.__basedir = path.join(__dirname);
+
+const { executeCommand } = require('./commands');
 const { Client, GatewayIntentBits, Partials, PermissionsBitField } = require('discord.js');
 const { logMessage } = require('./utils/logging');
 const { handleMessage } = require('./events/messageCreate');

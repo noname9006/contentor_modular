@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, Partials, PermissionsBitField } = require('discord.js');
-const { logMessage } = require('./utils/logging');
+const { logMessage } = require('./utils/logging'); 
 const { handleMessage } = require('./events/messageCreate');
 const dotenv = require('dotenv');
 
